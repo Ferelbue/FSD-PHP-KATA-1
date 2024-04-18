@@ -1,28 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<?php
-echo "<div>Esto es contact</div>";
-echo "<br/>";
-echo '<button onclick="window.location.href=\'../pages/contact.php\'">Go to Index</button>';
-?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
 
-<?php
-echo "<h3>KATA FIZZ-BUZZ</h3>";
-?>
+<body>
 
-<?php
-$let = 100;
+    <?php
+    include './common/header.php'
+    ?>
 
-for ($i = 1; $i < $let; $i++) {
+    <h1>Platos</h1>
+    <?php
+    include './pages/arrays.php'
+    ?>
 
-    if ($i % 3 == 0 && $i % 5 == 0 && $i != 0) {
-        echo "<div>FIZZBUZZ</div>";
-    } elseif ($i % 5 == 0 && $i != 0) {
-        echo "<div>BUZZ</div>";
-    } elseif ($i % 3 == 0 && $i != 0) {
-        echo "<div>FIZZ</div>";
-    } else {
-        echo "<div>$i</div>";
-    }
-}
+    <?php
+    include './common/footer.php'
+    ?>
 
-?>
+
+</body>
+
+</html>

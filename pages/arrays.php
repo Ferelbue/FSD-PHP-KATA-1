@@ -24,13 +24,11 @@ $platos = [
 echo "<ol>";
 foreach ($platos as $key => $plato) {
     echo "<h2>" . $plato['titulo'] . "</h2>";
-
-
-    // foreach ($plato as $key2 => $test) {
-    //     echo "<p>Comensales: " . $test['comensales'] . "</p>";
-    //     echo "<p>Tipo de plato: " . $test['tipoPlato'] . "</p>";
-    //     echo "<p>Precio: " . $test['precio'] . "</p>";
-    // }
+        echo "<ol>";
+            echo "<p>Comensales: " . $plato['comensales'] . "</p>";
+            echo "<p>Tipo de plato: " . $plato['tipoPlato'] . "</p>";
+            echo "<p>Precio: " . $plato['precio'] . "</p>";
+        echo "</ol>";
 
 }
 echo "</ol>";
